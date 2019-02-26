@@ -527,7 +527,7 @@ def SRResnet(inputs, targets, FLAGS):
 
 
 def save_images(fetches, FLAGS, step=None):
-    image_dir = os.path.join(FLAGS.output_dir, "images")
+    image_dir = FLAGS.output_dir
     if not os.path.exists(image_dir):
         os.makedirs(image_dir)
 
